@@ -1,0 +1,95 @@
+[
+  {
+    "type": "Server",
+    "users": [
+      {
+        "user": "S1",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "S2",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "S3",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "S4",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "S5",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      }
+    ]
+  },
+  {
+    "type": "Cook",
+    "users": [
+      {
+        "user": "C1",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "C2",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "C3",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "C4",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "C5",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      }
+    ]
+  },
+  {
+    "type": "Manager",
+    "users": [
+      {
+        "user": "M1",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "M2",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      },
+      {
+        "user": "M3",
+        "pass": "d74ff0ee8da3b9806b18c877dbf29bbde5165bd8e4dad7a3a72501eeb82e8f1",
+        "configs": {
+        }
+      }
+    ]
+  }
+]

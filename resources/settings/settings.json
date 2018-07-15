@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "table_layout": [
+    1,
+    10,
+    0,
+    10,
+    0,
+    11,
+    0,
+    4
+  ],
+  "table_layout_desc": "Number of 1 person seats to number of 8 person seats"
+}

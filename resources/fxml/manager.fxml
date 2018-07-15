@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.*?>
+<StackPane fx:id="stackPane" maxHeight="Infinity" maxWidth="Infinity" prefHeight="600" prefWidth="800"
+           xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+
+    <JFXTabPane fx:id="tabs" tabClosingPolicy="UNAVAILABLE">
+
+        <Tab fx:id="inventoryTab" text="Inventory">
+            <HBox spacing="10">
+                <JFXListView fx:id="inventory" styleClass="mylistview" prefWidth="${arrivals.width}"
+                             HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="25" bottom="25" top="25"/>
+                    </HBox.margin>
+                </JFXListView>
+
+                <JFXListView fx:id="arrivals" styleClass="mylistview" prefWidth="${inventory.width}"
+                             HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets right="25" bottom="25" top="25"/>
+                    </HBox.margin>
+                </JFXListView>
+
+            </HBox>
+
+
+        </Tab>
+
+        <Tab fx:id="statsTab" text="Statistics">
+            <HBox spacing="10">
+                <JFXListView fx:id="dishStat" prefWidth="${ingredientStat.width}" styleClass="mylistview"
+                             HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="25" bottom="25" top="25"/>
+                    </HBox.margin>
+                </JFXListView>
+
+                <JFXListView fx:id="ingredientStat" prefWidth="${dishStat.width}" styleClass="mylistview"
+                             HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets right="25" bottom="25" top="25"/>
+                    </HBox.margin>
+                </JFXListView>
+
+            </HBox>
+
+
+        </Tab>
+        <Tab fx:id="requestsTab" text="Requests and Payments">
+            <VBox spacing="10">
+                <JFXTextArea fx:id="requestsText" editable="false" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets left="25" right="25" top="25"/>
+                    </VBox.margin>
+                </JFXTextArea>
+                <HBox spacing="10" VBox.vgrow="NEVER" prefHeight="30" alignment="CENTER">
+                    <VBox.margin>
+                        <Insets left="25" right="25" bottom="25"/>
+                    </VBox.margin>
+                    <JFXButton text="Get Requests" fx:id="getRequests"/>
+                    <JFXButton text="Get Daily Payments" fx:id="getPayments"/>
+                    <JFXButton text="Copy to Clipboard" fx:id="copy"/>
+                </HBox>
+            </VBox>
+        </Tab>
+
+
+        <Tab fx:id="ordersTab" text="Active Orders">
+            <HBox VBox.vgrow="ALWAYS">
+                <JFXListView fx:id="orders" styleClass="mylistview" prefWidth="${orderInfo.width}" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="25" top="25" right="25" bottom="25"/>
+                    </HBox.margin>
+                </JFXListView>
+
+                <JFXListView fx:id="orderInfo" styleClass="mylistview" prefWidth="${orders.width}" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets top="25" right="25" bottom="25"/>
+                    </HBox.margin>
+                </JFXListView>
+            </HBox>
+
+        </Tab>
+    </JFXTabPane>
+</StackPane>

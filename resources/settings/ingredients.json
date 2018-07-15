@@ -1,0 +1,72 @@
+[
+  {
+    "displayName": "Water",
+    "additionPrice": 0.00,
+    "initialAmount": 1000,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Coffee",
+    "additionPrice": 0.30,
+    "initialAmount": 20,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Bread",
+    "additionPrice": 0.10,
+    "initialAmount": 1000,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Tomato",
+    "additionPrice": 0.30,
+    "initialAmount": 20,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Lettuce",
+    "additionPrice": 0.01,
+    "initialAmount": 20,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Onion",
+    "additionPrice": 0.30,
+    "initialAmount": 20,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Bacon",
+    "additionPrice": 0.5,
+    "initialAmount": 20,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Pork",
+    "additionPrice": 2.00,
+    "initialAmount": 20,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Beef",
+    "additionPrice": 2.00,
+    "initialAmount": 20,
+    "threshold": 20,
+    "addable": true
+  },
+  {
+    "displayName": "Fish",
+    "additionPrice": 0.30,
+    "initialAmount": 20,
+    "threshold": 20,
+    "addable": true
+  }
+]

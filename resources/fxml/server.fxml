@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<StackPane fx:id="stackPane" maxHeight="Infinity" maxWidth="Infinity" xmlns="http://javafx.com/javafx/8.0.121"
+           xmlns:fx="http://javafx.com/fxml/1">
+
+    <JFXTabPane fx:id="tabs" tabClosingPolicy="UNAVAILABLE">
+        <Tab fx:id="orderTab" text="Order">
+            <VBox spacing="10" alignment="CENTER_RIGHT">
+                <HBox alignment="TOP_CENTER" spacing="10" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets left="25.0" right="25.0" top="25.0"/>
+                    </VBox.margin>
+                    <JFXListView fx:id="menuList" styleClass="mylistview" HBox.hgrow="NEVER" prefWidth="200"
+                                 minWidth="200"/>
+
+                    <VBox alignment="TOP_CENTER" spacing="10" HBox.hgrow="ALWAYS">
+                        <JFXListView VBox.vgrow="ALWAYS" prefHeight="${temp.height}" fx:id="currentList"
+                                     styleClass="mylistview"/>
+
+                        <BorderPane VBox.vgrow="NEVER" prefHeight="30.0">
+                            <left>
+                                <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                                    <JFXButton mnemonicParsing="false" fx:id="removeAdditional">
+                                        <graphic>
+                                            <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true"
+                                                       preserveRatio="true">
+                                                <Image url="@/images/up.png"/>
+                                            </ImageView>
+                                        </graphic>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" fx:id="addAdditional">
+                                        <graphic>
+                                            <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true"
+                                                       preserveRatio="true">
+                                                <Image url="@/images/down.png"/>
+                                            </ImageView>
+                                        </graphic>
+                                    </JFXButton>
+                                </HBox>
+                            </left>
+                            <right>
+                                <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                                    <JFXButton mnemonicParsing="false" fx:id="removeExisting">
+                                        <graphic>
+                                            <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true"
+                                                       preserveRatio="true">
+                                                <Image url="@/images/up.png"/>
+                                            </ImageView>
+                                        </graphic>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" fx:id="addExisting">
+                                        <graphic>
+                                            <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true"
+                                                       preserveRatio="true">
+                                                <Image url="@/images/down.png"/>
+                                            </ImageView>
+                                        </graphic>
+                                    </JFXButton>
+                                </HBox>
+                            </right>
+                        </BorderPane>
+                        <HBox fx:id="temp" prefHeight="${currentList.height}" VBox.vgrow="ALWAYS" spacing="10">
+                            <JFXListView fx:id="toAdd" styleClass="mylistview" prefWidth="${toRemove.width}"
+                                         HBox.hgrow="ALWAYS"/>
+                            <JFXListView fx:id="toRemove" styleClass="mylistview"
+                                         prefWidth="${toAdd.width}" HBox.hgrow="ALWAYS"/>
+                        </HBox>
+                    </VBox>
+                </HBox>
+
+                <JFXButton fx:id="submitButton" text="Submit Order" prefHeight="30" VBox.vgrow="NEVER">
+                    <VBox.margin>
+                        <Insets left="25.0" right="25.0" bottom="25.0"/>
+                    </VBox.margin>
+                </JFXButton>
+            </VBox>
+        </Tab>
+        <Tab fx:id="activeOrdersTab" text="Active Orders">
+            <VBox spacing="10">
+                <HBox spacing="10" VBox.vgrow="ALWAYS">
+                    <JFXListView fx:id="activeOrders" styleClass="mylistview" prefWidth="${rightContainer.width}"
+                                 HBox.hgrow="ALWAYS"/>
+                    <VBox fx:id="rightContainer" prefWidth="${activeOrders.width}" HBox.hgrow="ALWAYS" spacing="10">
+                        <JFXListView fx:id="orderInfo" styleClass="mylistview" VBox.vgrow="ALWAYS"/>
+                        <JFXListView fx:id="toDeliver" styleClass="mylistview" VBox.vgrow="ALWAYS"/>
+                    </VBox>
+
+                    <VBox.margin>
+                        <Insets right="25" top="25" left="25"/>
+                    </VBox.margin>
+                </HBox>
+                <HBox spacing="10" alignment="CENTER_RIGHT">
+                    <VBox.margin>
+                        <Insets right="25" bottom="25" left="25"/>
+                    </VBox.margin>
+                    <JFXButton fx:id="returnButton" text="Return Existing Order" prefHeight="30"/>
+                    <Separator/>
+                    <JFXButton fx:id="cancelButton" text="Cancel Order" prefHeight="30"/>
+                    <JFXButton fx:id="deliver" text="Deliver Order" prefHeight="30"/>
+
+                </HBox>
+            </VBox>
+        </Tab>
+
+        <Tab fx:id="billTab" text="Bill">
+            <VBox alignment="CENTER" spacing="10">
+
+                <JFXTextArea fx:id="billTextBox" editable="false" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets top="25" right="25" left="25"/>
+                    </VBox.margin>
+                </JFXTextArea>
+
+                <HBox spacing="10" alignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="25" right="25" left="25"/>
+                    </VBox.margin>
+                    <JFXButton fx:id="copyBill" text="Copy to Clipboard" prefHeight="30"/>
+                    <JFXButton fx:id="getBill" text="Get Bill" prefHeight="30" VBox.vgrow="NEVER"/>
+                    <Separator/>
+                    <JFXButton fx:id="clearTable" text="Clear Table" prefHeight="30" VBox.vgrow="NEVER"/>
+                </HBox>
+            </VBox>
+        </Tab>
+
+    </JFXTabPane>
+</StackPane>

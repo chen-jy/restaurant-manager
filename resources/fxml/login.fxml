@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" maxHeight="Infinity" maxWidth="Infinity" prefHeight="600" prefWidth="800"
+           xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="visual.controller.LoginController">
+
+    <HBox alignment="TOP_CENTER">
+        <VBox alignment="TOP_CENTER" spacing="10">
+            <HBox.margin>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+            </HBox.margin>
+            <Label styleClass="title-label" text="Login"/>
+
+            <JFXTextField fx:id="username" promptText="Username"/>
+
+            <JFXPasswordField fx:id="password" promptText="Password"/>
+            <JFXButton fx:id="submit" mnemonicParsing="false" text="Submit"/>
+            <Label fx:id="errorLabel" styleClass="normal-label-red"/>
+        </VBox>
+    </HBox>
+
+</StackPane>

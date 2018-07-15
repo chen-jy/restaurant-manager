@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.*?>
+<!---->
+
+<StackPane fx:id="stackPane" maxHeight="Infinity" maxWidth="Infinity" prefHeight="600" prefWidth="800"
+           xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+
+
+    <JFXTabPane fx:id="tabs" tabClosingPolicy="UNAVAILABLE">
+
+        <Tab fx:id="inventoryTab" text="Order">
+            <VBox spacing="10" alignment="CENTER">
+
+                <HBox VBox.vgrow="ALWAYS" spacing="10">
+                    <JFXListView fx:id="orders" styleClass="mylistview" prefWidth="${orderInfo.width}"
+                                 HBox.hgrow="ALWAYS">
+                        <HBox.margin>
+                            <Insets left="25" top="25"/>
+                        </HBox.margin>
+                    </JFXListView>
+
+                    <JFXListView fx:id="orderInfo" styleClass="mylistview" prefWidth="${orders.width}"
+                                 HBox.hgrow="ALWAYS">
+                        <HBox.margin>
+                            <Insets top="25" right="25"/>
+                        </HBox.margin>
+                    </JFXListView>
+                </HBox>
+                <HBox spacing="10">
+                    <VBox.margin>
+                        <Insets left="25.0" bottom="25.0" right="25.0"/>
+                    </VBox.margin>
+                    <JFXButton fx:id="takeButton" text="Take Order" prefHeight="30" VBox.vgrow="NEVER"/>
+                    <JFXButton fx:id="cookedButton" text="Finish Order" prefHeight="30" VBox.vgrow="NEVER"/>
+
+                </HBox>
+            </VBox>
+
+        </Tab>
+    </JFXTabPane>
+
+</StackPane>

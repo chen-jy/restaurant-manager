@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Fish Burger",
+    "price": 4.45,
+    "tags": [
+      "Seafood",
+      "Main"
+    ],
+    "ingredients": {
+      "Tomato": 1,
+      "Onion": 1,
+      "Lettuce": 1,
+      "Fish": 2,
+      "Bread": 2
+    }
+  },
+  {
+    "name": "Pork Burger",
+    "price": 3.45,
+    "tags": [
+      "Main",
+      "Burgers"
+    ],
+    "ingredients": {
+      "Tomato": 1,
+      "Onion": 1,
+      "Lettuce": 1,
+      "Pork": 2,
+      "Bread": 2
+    }
+  },
+  {
+    "name": "Beef Burger",
+    "price": 3.45,
+    "tags": [
+      "Main",
+      "Burgers"
+    ],
+    "ingredients": {
+      "Tomato": 1,
+      "Onion": 1,
+      "Lettuce": 1,
+      "Beef": 2,
+      "Bread": 2
+    }
+  },
+  {
+    "name": "Coffee",
+    "price": 1.00,
+    "tags": [
+      "Drinks",
+      "Vegan",
+      "Vegetarian"
+    ],
+    "ingredients": {
+      "Coffee": 2,
+      "Water": 3
+    }
+  },
+  {
+    "name": "Bread",
+    "price": 1.00,
+    "tags": [
+      "Vegan",
+      "Vegetarian"
+    ],
+    "ingredients": {
+      "Bread": 20,
+      "Water": 3
+    }
+  }
+
+]

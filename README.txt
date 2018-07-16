@@ -1,8 +1,3 @@
-=== Credit ===
-
-This project by Hsuan-Hao Chen, Murad Akhundov, Linwen Huang, and Yijia Chen.
-
-
 === Project Set-up ===
 
 1. Clone the repo. In IntelliJ, select Import Project and select the folder restaurant-manager as the project directory. Leave all other settings as default.
@@ -253,4 +248,7 @@ Manager GUI:
     Active Orders Tab:
         This tab allows the manager to view all the orders that are currently active, and their information.
 
-		
+
+=== Credit ===
+
+This project by Hsuan-Hao Chen, Murad Akhundov, Linwen Huang, and Yijia Chen.
